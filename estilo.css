@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ body {
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fbfbfb;
+	
+}
+
+
+#navegacao{
+	background: rgba(0, 0, 0, .6);
+	border-bottom: 1px solid #8B8378;
+	height: 45px;
+	position: fixed;
+	width: 100%;
+	top:  0;
+	
+}
+
+
+#area{
+	width: 720px;
+	margin: 0 auto;
+
+	
+}
+
+.verde{
+	color: #b9c941;
+}
+
+#logo{
+	
+}
+
+#menu{
+	float: right;
+	padding: 10px 0;
+}
+
+#logo{
+	float: left;
+	color: #fff;
+}
+
+/*Formatação menu*/
+/*Links*/
+
+a{
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+/*nao visitado*/
+a:link{
+	color: #fff;
+}
+/* visitado*/
+a:visited{
+	color: #838383;
+}
+
+/*ativo*/
+
+
+/*hover*/
+a:hover{
+	color: #fff;
+	background-color: #b9c941;
+}
+
+
+
+/*Gradiente*/
+
+#gradient1{
+	background-image: linear-gradient(60deg, #FF69B4, #8A2BE2, #00CD00);
+	height: 100%;
+	margin-top: 45px;
+}
+
+#gradient2{
+	background-image: radial-gradient(#FF69B4, #8A2BE2, #00CD00,#FF69B4);
+	height: 100%;
+	
+}
+
+
+
+
+/* Cantos arredondados*/
+
+#box1{
+	text-align: justify;
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	border-radius: 20px 80px; 
+	margin: 20px auto;
+	padding: 20px;
+}
+/* Box sizing---define o tamaho real do box....300px no exemplo*/
+#box2{
+	text-align: justify;
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	border-radius: 20px;
+	margin: 20px auto;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+/*Sombras*/
+#box3{
+	text-align: justify;
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	border-radius: 50px;
+	margin: 20px auto;
+	padding: 20px;
+	box-shadow: 15px 10px 10px blue, -15px -10px 10px red;
+
+}
+
+#box3 h1{
+	font-size: 70px;
+	text-shadow: -15px 5px 10px red;
+}
+
+
+/*Animaçoes css*/
+
+@keyframes animacao-box{
+	from{background:red; border-radius: 0px; top: 0; left: 0;} 
+	to{	background: yellow; border-radius: 50%; top: 200px; left: 200px}
+}
+
+#box-animacao{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background:red;
+	margin: 20px auto;
+	animation-name: animacao-box;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+	/* animation: animacao-box 2s 1s 50 alternate*/
+
+}
+
+/*Transicoes*/
+
+#box-transicao{
+	width: 300px;
+	height: 300px;
+	background: orange;
+	
+}
+
+#box-transicao:hover{
+	width: 400px;
+	background: black;
+	transition: background 2s, width 2s; /*all 2s*/
+	transition-delay: 1s;
+}
+
+
+  .div {
+      width: 100px;
+      height: 100px;
+      background: black;
+      transition: width 1.5s;
+      transition-delay: 1s;
+      
+  }
+
+  .div:hover {
+      width: 100%;
+
+  }
+
+
+  /*escurece tela*/
+
+  #escurece{
+  	width: 400px;
+  	height: 400PX;
+  	background: purple;
+  	margin: 50px auto;
+  	text-align: center;
+  	box-sizing: border-box;
+  	padding-top: 180px;
+}
+
+#escurece:hover{
+	box-shadow: 0 0 0 99999px rgba(0, 0, 0, .6);
+	transition: box-shadow 2s;
+}
+
+
+#linhasPassando{
+	text-align: center;
+	color: #fff;
+	height: 500px;
+	background-color: #3C1D3D;
+	border-top: 5px solid #000;
+	border-bottom: 5px solid #000;
+	background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0, 0, 0, .1) 14px, rgba(0, 0, 0, .1) 15px, transparent 15px, transparent);
+	background-size: 20px 20px;
+	background-attachment: fixed;
+}
+
+#branca{
+	height: 1px;
+}
+
+
+
+
+
+
