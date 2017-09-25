@@ -13,3 +13,40 @@
 p{
 	text-align: center;
 }
+
+
+
+/*===============================Formulario================================*/
+
+
+form{
+	width: 500px;
+	margin: 50px auto;
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 5px solid #000;
+	padding: 30px;
+
+
+}
+
+label, input, textarea, button{
+	display: block;
+	margin: 10px auto;
+
+
+}
+
+label{
+	text-align: center;
+	color: black;
+	margin: 10px 0;
+}
+
+input, textarea{
+	color: blue;
+}
+
+.error{
+	color: red;
+	text-transform: uppercase;
+}

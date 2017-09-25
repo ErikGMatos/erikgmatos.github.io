@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/estilo.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript">
 		$(function (){
 			$("#slides ul").cycle ({
@@ -14,8 +15,27 @@
 				timeout: 4000,
 				prev: '#previous',
 				next: '#next',
-			})
-		})
+			});
+		});
+
+		$(document).ready (function(){
+
+			$("#FormularioContato").validate({
+
+				rules: {
+					campoNome:{required: true, minlength: 3},	
+					campoEmail:{required: true, email: true},
+					campoMensagem:{required:true, minlength: 3}				
+				},
+
+				messages: {
+
+					campoNome:{required: "Por favor digite seu nome completo", minlength: "Seu nome deve conter no minimo 3 caracteres"},	
+					campoEmail:{required: "Digite seu email para contato", email: "Digite um email válido!"},
+					campoMensagem:{required:"Digite aqui a sua mensagem", minlength: "Sua mensagem deve ter pelo menos 3 caracteres"}		
+				}
+			});
+		});
 	</script>
 </head>
 <body>
@@ -30,5 +50,19 @@
 		<a href="#" id="previous">ANTERIOR</a>
 		<a href="#" id="next">PROXIMO</a>
 	</p>
+
+	<form id="FormularioContato" method="post">
+		
+		<label for="nome">NOME</label>
+		<input type="text" name="campoNome" id="nome" required minlength="3">
+
+		<label for="email">EMAIL</label>
+		<input type="email" name="campoEmail" id="email" required >
+
+		<label for="nome">MENSAGEM</label>
+		<textarea name="campoMensagem" id="mensagem" cols="50" rows="10" required minlength="3"></textarea>
+
+		<button>Enviar</button>
+	</form>
 </body>
 </html>
