@@ -22,22 +22,39 @@ body{
 	border-bottom: 1px solid #000;
 }
 
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 995px) {
+	
+	.navbar-default{
+	height: auto;
+	}
+}
+
+     
+
+
+
+
+/* estilos aqui */
+	
+		
 
 
 #barra .novoItem a{
 	text-decoration: none;
 	color: #000 ;
+
 }
 
 #barra .novoItem a:hover{
 	text-decoration: none;
 	color: #cc0033 ;
+
 }
    
 .sign{
 	height: 20px;
 	margin-top: 15px;
-
 }
 
 .sign li{
@@ -45,42 +62,46 @@ body{
 	padding: 0px 15px;
 }
 
-#banner-principal{
+.bannerPrincipal{
 	margin-top: 170px;
-	background: url(imagens/banner_principal.jpg) no-repeat;
+	background-image: url(imagens/banner_principal.jpg);
 	height: 600px;
-	background-size: cover;
-	background-position: center center;
+	background-size: auto;
+	background-position: 30% 50%;
 }
 
 
-#comoFunciona{
+.fundoPreto{
 	background-color: #000;
-	height: 600px;
 	margin-top: 100px;
-	
 }
 
-#artigoFunciona{
-	width: 750px;
-	margin-top: 80px;
-
-	
-
-	
+.item img{
+	margin: 0 auto;
+	padding: 30px 0;
 }
 
-#imgHomem{
-	margin-top: 20px;
-	margin-left: 15px;
-	
+.textoPadding{
+	padding: 50px 80px;
 }
 
-#divImgHomem{
-	
-	margin: 80px 15px;
-	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
