@@ -148,7 +148,7 @@ body{
 .figcaption figcaption{
   		
   	opacity: 0;
-    position: absolute;
+    osition: absolute;
     top: 0px;
       background-color: rgba(0,0,0,.4);
       color: #cc0033;
