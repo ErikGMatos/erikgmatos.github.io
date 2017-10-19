@@ -23,7 +23,7 @@ body{
 	border-bottom: 1px solid #000;
 }
 
-/* Tablet em retrato a paisagem e desktop */
+/* ========NAvBar altura automatico       Tablet em retrato a paisagem e desktop */
 @media (min-width: 768px) and (max-width: 995px) {
 	
 	.navbar-default{
@@ -31,6 +31,9 @@ body{
 	}
 }
      
+
+
+
 #barra .novoItem a{
 	text-decoration: none;
 	color: #000 ;
@@ -55,8 +58,9 @@ body{
 }
 
 
-/*============seção principal=============*/
 
+
+/*============seção principal=============*/
 .bannerPrincipal{
 	margin-top: 170px;
 	background-image: url(imagens/banner_principal.jpg);
@@ -65,8 +69,11 @@ body{
 	background-position: 30% 50%;
 }
 
-/*============seção como funciona=============*/
 
+
+
+
+/*============seção como funciona=============*/
 .fundoPreto{
 	background-color: #000;
 	margin-top: 100px;
@@ -99,40 +106,86 @@ body{
 }
 
 
-/*============modalidades=============*/
 
 
 
-
-.modRow .img-responsive{
-	padding-top: 10px;
-	margin: 0 auto;
+/*============Modalidaes utilizando o FlexboX=============*/
+#modalidades{
+	padding: 55px 0;
+    width:auto;
+	height: 490px;
+	display: flex;
+	flex-direction: row;
+  	flex-wrap: nowrap;
+  	justify-content: space-between;
 }
 
-.desce{
-	padding-top: 50px;
+.div-figure{
+	
+  width: 350px
+  height: 350px;
+  margin:20px;
+}
+
+.div-figure img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.div-figure:nth-child(even) {
+	display: flex;	
+  align-items: flex-end;
+}
+
+.div-figure:nth-child(1) {
+	margin-left: 0px;
+}
+
+.div-figure:nth-child(5) {
+	margin-right: 0px;
 }
 
 
-/*===diminui o padding no mobile===*/
+
+/*============Media Query de modalidades=============*/
 @media (max-width: 768px){
-	.desce{
-	padding-top: 10px !important;
-}}
+	 #modalidades{
+    flex-direction: column;
+    height: auto;
+	}
+
+	.div-figure:nth-child(even){
+	margin: 0 auto;
+	}
+
+	.div-figure:nth-child(odd){
+	margin: 0 auto;
+	padding:20px 0;
+	}
+}
+
+
+
+
+
 
 
 /*============CAdastre se=============*/
-
 .cadastre h2{
 	padding-top: 30px;
+}
+
+.cadastre-se{
+	background-color: #000;
+	color: #fff;
 }
 
 
 /*============Footer=============*/
 
-.contato p,
-.contato {
-	
+.paddingTopo{
+
+	padding-top: 50px;
 }
 
 /*============tipografia=============*/
@@ -165,8 +218,6 @@ body{
        opacity: 1;
 
    }
-
-
 
 
 
