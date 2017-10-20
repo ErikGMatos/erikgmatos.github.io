@@ -5,10 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Contato Raised Soluções Web</title>
+	<title>Raised Soluções Web</title>
 	 <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,10 +21,10 @@
 <body>
 	
 	<nav class="navbar navbar-fixed-top navbar-default">
-		<div class="container">
+		<div id="container" class="container fundoMobile">
 			
 			<!--header-->
-			<div class="navbar-header">
+			<div class="navbar-header fundoMobile">
 
 				<!--BOTAO TOGGLE-->
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra">
@@ -32,75 +34,152 @@
 				</button>
 				
 				<a href="index.html" class="navbar-brand">
-					<img src="imagens/logo.png" alt="Logo Raised">
+					<img class="img-responsive" width="230px" src="imagens/logo.png" alt="Logo Raised">
 				</a>
 
 
 			</div>
 
 			<!--navbar-->
-			<div class="collapse navbar-collapse" id="barra">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">LOGIN</a></li>
-					<li><a href="#">ENTRAR</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
+			<div class="collapse navbar-collapse " id="barra">
+
+				<ul class="nav navbar-nav navbar-right novoItem">
+					<div id="" class="sign">
+  						<div class="pull-right novoItem">
+      						<li><a href="#">LOGIN</a></li>
+     						<li><a href="#">ENTRAR</a></li>
+  						</div>
+					</div>
 					<li><a href="#">SOBRE</a></li>
 					<li><a href="#">MODALIDADES</a></li>
 					<li><a href="#">INSTRUTORES</a></li>
 					<li><a href="#">CALENDÁRIO</a></li>
 					<li><a href="#">PLANOS</a></li>
-					<li><a href="#">CONTATO</a></li>
+					<li><a href="contato.html">CONTATO</a></li>
 				</ul>
 			</div>
-
 		</div><!--/container-->
-		
 	</nav> <!--/nav-->
-
-	<div>
-		
-		<img src="imagens/banner_contato.jpg" alt="Contato Raised">	
-		
-		<form action="cadastro-usuario.php" method="post">
-			
-			<input type="text" name="nome" placeholder="NOME">
-			<input type="text" name="sobrenome" placeholder="SOBRENOME">
-			<input type="email" name="email" placeholder="EMAIL">
-			<input type="" name="nome" placeholder="C.P.F">
-			<input type="" name="nome" placeholder="ANIVERSARIO">
-			<input type="text" name="nome" placeholder="TELEFONE">
-			<label>Genero</label>
-			<label>M <input type="checkbox"></label>
-			<label>F <input type="checkbox"></label>
-			<input type="password" name="nome" placeholder="SENHA">
-			<input type="checkbox"><label>li e aceito os <a href="termos.html"><u><strong>termos da impulse</strong></u></a></label></input>
-			<button type="submit">CADASTRAR</button>
-
-		</form>	
+	
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="bannerContato">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-md-4 text-center divFormulario">
+  					<form class="form-inline" action="/action_page.php">
+   						<div class="form-group">
+    						<input type="email" class="form-control" id="email" placeholder="Nome"  name="email">
+    					</div>
+    		 			
+    		 			<div class="form-group">
+  							<input type="password" class="form-control" id="pwd" placeholder="Sobrenome" name="pwd">
+    					</div>
+    				</form>
+    				<form class="form-inline" action="/action_page.php">
+   						<div class="form-group">
+    						<input type="email" class="form-control" id="email" placeholder="Email"  name="email">
+    					</div>
+    		 			
+    		 			<div class="form-group">
+  							<input type="password" class="form-control" id="pwd" placeholder="CPF" name="pwd">
+    					</div>
+					</form>
+					<form class="form-inline" action="/action_page.php">
+   						<div class="form-group">
+    						<input type="email" class="form-control" id="email" placeholder="Aniversário"  name="email">
+    					</div>
+    		 			
+    		 			<div class="form-group">
+  							<input type="password" class="form-control" id="pwd" placeholder="Telefone" name="pwd">
+    					</div>
+					</form>
+					<form class="form-inline" action="/action_page.php">
+   						<div class="checkbox">
+      						<label>Genero
+      							<input type="checkbox" name="masculino">M
+      							<input type="checkbox" name="Feminino">F
+      						</label>
+    					</div>
+    		 			&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;
+    		 			<div class="form-group">
+  							<input type="password" class="form-control" id="pwd" placeholder="Senha" name="pwd">
+    					</div>
+					</form>
+					<form class="form-inline" action="/action_page.php">
+   						<div class="checkbox">
+      						<label><input type="checkbox" name="remember"> Li e aceito os <a href="">termos da impulse</a></label>
+    					</div>
+    		 			&emsp;&emsp;&ensp;
+    		 			<div class="form-group">
+  							<button class="form-control btn btn-default btn-cadastro">CADASTRAR</button>
+    					</div>
+					</form>
+				</div>				
+			</div>
+		</div>
 	</div>
-
-	<footer>
-		<img src="imagens/logo-rodape.png" alt="Logo Raised">
-		<p>Email <br>
-		<a href="mailto:contato@studioimpulse.com.br">contato@studioimpulse.com.br</a>
-		</p>
-		
-		<p>
-			Telefone <br>
-			+55 (00) 1234- 5678
-		</p>
-
-		<a href="http://www.facebook.com.br/Raised" target="blank"><img src="imagens/social-facebook.png" alt="Facebook"></a>
-		<a href="http://www.instagram.com.br/Raised" target="blank"><img src="imagens/social-instagram.png" alt="Instagram"></a>
-		<a href="http://www.youtube.com.br/Raised" target="blank"><img src="imagens/social-youtube.png" alt="Youtube"></a>
-
-		<p>Powered by &copy;Erik Matos</p>
-	</footer>
+	
+	
+	<!--Rodapé-->
+	<footer >
+		<div class="container">
+			<div class="row paddingTopo">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<br>
+					<img class="img-responsive"  src="imagens/logo-rodape.png"  alt="Logo Raised">
+				</div>	
+				<div class="col-xs-12 col-sm-4 col-md-4 contato">
+					<br><br>
+					<p>Email <br>
+					<a href="mailto:contato@studioimpulse.com.br">contato@studioimpulse.com.br</a>
+					</p>
+					<p>
+					<br><br>	
+					Telefone <br>
+					+55 (00) 1234- 5678
+					</p><br><br>
+				</div>	
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-md-4">
+							<a href="http://www.facebook.com.br/Raised" target="blank"><img class="img-responsive text-center" src="imagens/social-facebook.png" alt="Facebook"></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4">	
+							<a href="http://www.instagram.com.br/Raised" target="blank"><img class="img-responsive text-center" src="imagens/social-instagram.png" alt="Instagram"></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4">	
+							<a href="http://www.youtube.com.br/Raised" target="blank"><img class="img-responsive text-center" src="imagens/social-youtube.png" alt="Youtube"></a>
+						</div>
+					</div>
+					<br><br><br>	
+					<p class="col-xs-12 text-center">Powered by &copy;Erik Matos</p>		
+				</div>
+			</div>	
+		</div>
+	</footer><!--Rodapé-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

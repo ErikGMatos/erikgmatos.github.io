@@ -1,0 +1,66 @@
+body{
+	background-color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+}
+
+
+.bannerContato{
+	margin-top: 100px;
+	background-image: url(../imagens/banner_contato.jpg);
+	height: 730px;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.fundoContato{
+	background-color: #fff;
+	color: #000;
+}
+
+.btn-cadastro{
+
+	background-color: #fff;
+	color: #000;
+	border-radius: 0px;
+}
+
+
+.divFormulario{
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 90px;
+}
+
+.divFormulario form{
+		padding-bottom: 15px;
+		color:#000;
+}
+
+.divFormulario {
+		padding-bottom: 15px;
+		color:#000;
+}
+
+.divFormulario input{
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid #000;
+	border-radius: 0px;
+}
+
+
+.divFormulario button:hover{
+	background-color: #000;
+	color: #fff;
+	transition: transition:all .4s;
+}
+.divFormulario form button:hover{
+	background-color: #000;
+	color: #fff;
+	transition:all .4s;
+}
+
