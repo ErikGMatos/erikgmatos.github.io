@@ -203,6 +203,11 @@ body{
 
 }
 
+.form-control:focus{
+	box-shadow: none;
+	border-color: #fff;
+}
+
 .form-control-customizado{
 	background-color: transparent;
 	border-radius: 0px;

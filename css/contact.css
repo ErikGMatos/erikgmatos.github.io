@@ -64,3 +64,7 @@ body{
 	transition:all .4s;
 }
 
+#contato_formulario input:focus{
+	box-shadow: none;
+	border-color: #000;
+}
