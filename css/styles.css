@@ -203,6 +203,8 @@ body{
 
 }
 
+
+
 .form-control:focus{
 	box-shadow: none;
 	border-color: #fff;
@@ -219,7 +221,6 @@ body{
 	 
 
 }
-
 
 
 
